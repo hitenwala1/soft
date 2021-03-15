@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update -y
-#sudo apt-get upgrade -y
+sudo apt-get upgrade -y
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb
