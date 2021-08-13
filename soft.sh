@@ -7,7 +7,7 @@ echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-st
 
 sudo apt-get update -y
 sudo apt-get install anydesk -y
-sudo apt-get install gnome-session-flashback
+sudo apt-get install gnome-session-flashback -y
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb
