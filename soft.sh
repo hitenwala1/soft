@@ -18,5 +18,6 @@ sudo apt-get install git maven openjdk-8-jdk -y
 sudo snap install zoom-client
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt-get install openssh-server openssh-client -y
 
 #sudo snap install slack --classic
