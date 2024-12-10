@@ -54,4 +54,9 @@ sudo apt-get upgrade -y
 echo "Installing OpenSSH server and client..."
 sudo apt-get install -y openssh-server openssh-client
 
+# Uncomment 'WaylandEnable=false' in custom.conf
+echo "Uncommenting 'WaylandEnable=false' in /etc/gdm3/custom.conf..."
+sudo sed -i 's/^#WaylandEnable=false/WaylandEnable=false/' /etc/gdm3/custom.conf
+echo "'WaylandEnable=false' has been uncommented."
+
 echo "Installation complete!"
