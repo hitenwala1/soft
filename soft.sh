@@ -9,6 +9,9 @@ sudo apt-get update -y
 echo "Installing wget..."
 sudo apt-get install -y wget
 
+echo "Installing VIM..."
+sudo apt-get install -y vim
+
 # Adding AnyDesk repository key and repository
 echo "Adding AnyDesk repository..."
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
