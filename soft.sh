@@ -40,9 +40,9 @@ sudo apt-get install -y git maven openjdk-8-jdk
 echo "Installing Zoom client..."
 sudo snap install zoom-client
 
-# Install Skype via Snap
-echo "Installing Skype..."
-sudo snap install skype
+# Install Teams via Snap
+echo "Installing TEAMS..."
+sudo snap install teams-for-linux
 
 # Install Slack via Snap (classic confinement)
 echo "Installing Slack..."
