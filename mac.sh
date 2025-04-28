@@ -30,9 +30,9 @@ brew install maven
 echo "Installing Slack..."
 brew install --cask slack
 
-# Install Skype
-echo "Installing Skype..."
-brew install --cask skype
+# Install Teams
+echo "Installing Teams..."
+brew install --cask microsoft-teams
 
 # Install Google Chrome
 echo "Installing Google Chrome..."
