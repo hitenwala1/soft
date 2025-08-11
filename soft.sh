@@ -13,15 +13,15 @@ echo "Installing VIM..."
 sudo apt-get install -y vim
 
 # Adding AnyDesk repository key and repository
-echo "Adding AnyDesk repository..."
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
-echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+#echo "Adding AnyDesk repository..."
+#wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+#echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
 
-echo "Updating package list after adding AnyDesk repo..."
-sudo apt-get update -y
+#echo "Updating package list after adding AnyDesk repo..."
+#sudo apt-get update -y
 
-echo "Installing AnyDesk..."
-sudo apt-get install -y anydesk
+#echo "Installing AnyDesk..."
+#sudo apt-get install -y anydesk
 
 echo "Installing GNOME Flashback session..."
 sudo apt-get install -y gnome-session-flashback
