@@ -12,17 +12,6 @@ sudo apt-get install -y wget
 echo "Installing VIM..."
 sudo apt-get install -y vim
 
-# Adding AnyDesk repository key and repository
-#echo "Adding AnyDesk repository..."
-#wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
-#echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
-
-#echo "Updating package list after adding AnyDesk repo..."
-#sudo apt-get update -y
-
-#echo "Installing AnyDesk..."
-#sudo apt-get install -y anydesk
-
 echo "Installing GNOME Flashback session..."
 sudo apt-get install -y gnome-session-flashback
 
@@ -88,19 +77,8 @@ sudo dpkg -i fleet-osquery_*.deb
 sudo systemctl start orbit
 sudo systemctl enable orbit
 
-# Add the AnyDesk GPG key
-sudo apt update -y
-sudo apt install ca-certificates curl apt-transport-https
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY -o /etc/apt/keyrings/keys.anydesk.com.asc
-sudo chmod a+r /etc/apt/keyrings/keys.anydesk.com.asc
-
-# Add the AnyDesk apt repository
-echo "deb [signed-by=/etc/apt/keyrings/keys.anydesk.com.asc] https://deb.anydesk.com all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list > /dev/null
-
-# Update apt caches and install the AnyDesk client
-sudo apt update -y
-sudo apt install anydesk -y
-
-
+echo "Installing Anydesk "
+wget https://download.anydesk.com/rpi/anydesk-7.0.2-arm64.tar.gz
+sudo dpkg -i anydesk_*.deb
+ 
 echo "Installation complete!"
