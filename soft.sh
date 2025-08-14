@@ -89,7 +89,7 @@ sudo systemctl start orbit
 sudo systemctl enable orbit
 
 # Add the AnyDesk GPG key
-sudo apt update
+sudo apt update -y
 sudo apt install ca-certificates curl apt-transport-https
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY -o /etc/apt/keyrings/keys.anydesk.com.asc
@@ -99,8 +99,8 @@ sudo chmod a+r /etc/apt/keyrings/keys.anydesk.com.asc
 echo "deb [signed-by=/etc/apt/keyrings/keys.anydesk.com.asc] https://deb.anydesk.com all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list > /dev/null
 
 # Update apt caches and install the AnyDesk client
-sudo apt update
-sudo apt install anydesk
+sudo apt update -y
+sudo apt install anydesk -y
 
 
 echo "Installation complete!"
