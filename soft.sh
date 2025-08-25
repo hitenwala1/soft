@@ -51,6 +51,11 @@ echo "Uncommenting 'WaylandEnable=false' in /etc/gdm3/custom.conf..."
 sudo sed -i 's/^#WaylandEnable=false/WaylandEnable=false/' /etc/gdm3/custom.conf
 echo "'WaylandEnable=false' has been uncommented."
 
+#Download and Installing rustdesk remote
+wget https://github.com/rustdesk/rustdesk/releases/download/1.4.1/rustdesk-1.4.1-x86_64.deb
+
+sudo apt install -f
+
 # Enrolling client in FleetDM
 
 #FILE_ID="1KqstDdgv9_NDKWUQaN4YufofU9UCZ_KT"
