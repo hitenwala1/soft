@@ -53,6 +53,7 @@ echo "'WaylandEnable=false' has been uncommented."
 
 #Download and Installing rustdesk remote
 wget https://github.com/rustdesk/rustdesk/releases/download/1.4.1/rustdesk-1.4.1-x86_64.deb
+sudo dpkg -i rustdesk-1.4.1-x86_64.deb
 
 sudo apt install -f
 
